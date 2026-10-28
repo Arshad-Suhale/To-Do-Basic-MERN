@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+
+@theme {
+  /* =========================
+     COLORS
+     ========================= */
+
+  --color-background: #0f1115;
+
+  --color-surface: #1c2129;
+  --color-surface-secondary: #161a21;
+  --color-surface-elevated: #202630;
+
+  --color-border: #2a313c;
+  --color-border-hover: #3a4352;
+
+  --color-text-primary: #f5f7fa;
+  --color-text-secondary: #a7afbd;
+  --color-text-muted: #737c8c;
+
+  --color-primary: #7c5cfc;
+  --color-primary-light: #AF9EFF;
+  --color-primary-hover: #6b4de6;
+  --color-primary-active: #5a3cce;
+  --color-primary-tint: #261f45;
+
+  --color-success: #35c98b;
+  --color-danger: #f05d5e;
+  --color-warning: #f2b84b;
+
+
+  /* =========================
+     TYPOGRAPHY
+     ========================= */
+
+  --font-sans: "Geist", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+
+  /* =========================
+     BORDER RADIUS
+     ========================= */
+
+  --radius-sm: 0.25rem;
+  --radius-base: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+
+  /* =========================
+     SHADOWS
+     ========================= */
+
+  --shadow-card: 0 2px 4px rgb(0 0 0 / 40%);
+  --shadow-modal:
+    0 12px 32px rgb(0 0 0 / 65%),
+    0 2px 6px rgb(0 0 0 / 40%);
+}
+
+
+/* =========================
+   GLOBAL BASE STYLES
+   ========================= */
+
+@layer base {
+  body {
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
